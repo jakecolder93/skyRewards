@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Sky Rewards Test
+
+My app for the sky test.
+
+Production: <https://jakerewards.netlify.app>
+
+I'd never even heard of TDD before last week so a lot of my knowledge and the groundwork for this build is based on a blog found at: <https://outsidein.dev/>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
