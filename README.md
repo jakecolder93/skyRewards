@@ -6,6 +6,8 @@ Production: <https://jakerewards.netlify.app>
 
 I'd never even heard of TDD before last week so a lot of my knowledge and the groundwork for this build is based on a blog found at: <https://outsidein.dev/>
 
+E2E test scripts can be found in the cypress/integration files.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
