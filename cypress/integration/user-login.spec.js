@@ -21,4 +21,20 @@ describe('User form', () => {
             cy.get('button').click()
         })
     })
+    it('Does not submit with incorrect account number', () => {
+        cy.visit('/')
+
+        cy.get('#formVal').invoke('submit', (e) => {
+            e.preventDefault()
+            throw new Error('Invalid account number!!!')
+        })
+
+        cy.get('#formVal').within(() => {
+            cy.get('#userIn').type(100)
+            cy.get('button').click()
+        
+            cy.get('#userIn').type(10000)
+            cy.get('button').click()
+        })
+    })
 })
