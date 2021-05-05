@@ -1,14 +1,13 @@
 /* eslint-disable prettier/prettier */
 import React, {useRef, useState} from 'react'
 
-const UserForm = ({accessDB }) => {
+const UserForm = () => {
     const [accNum, setAccNum] = useState("")
     const searchField = useRef(null)
 
     function handleSubmit(e){
         e.preventDefault()
         searchField.current.focus()
-        accessDB(accNum)
         setAccNum("")
     }
 
