@@ -48,4 +48,4 @@ const App = () => {
   )
 }
 
-export default App; //Current git branch is called get-rewards and postgres pswd jake123
+export default App; 
