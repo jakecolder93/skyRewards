@@ -33,6 +33,8 @@ const App = () => {
     for(var i = 0 ; i < rewards.length ; i++){
       if(rewards[i].account == testIn){
         setUserRew(rewards[i].award)
+      } else if (!(rewards.some(x => x.account == testIn))){    // Checks if user account exists
+        setUserRew('Invalid')
       }
     }
   }

@@ -1,6 +1,8 @@
 # Sky Rewards Test
 
-My app for the sky test.
+My app for the sky test. 
+
+Backend PostgreSQL server consists of account numbers ranging from 1001-1010 with different subscription packages and rewards based on the packages.
 
 Production: <https://jakerewards.netlify.app>
 

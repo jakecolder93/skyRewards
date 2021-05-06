@@ -4,19 +4,11 @@ import React from 'react'
 
 const RewardResponse = ({userRew}) => {
 
-   /* const renderParagraph = () => {
-        if(userRew === 'N/A') {
-            return <p>I'm sorry, you aren't currently eligible for any rewards.</p>
-        } else if(userRew !== 'N/A' ) {
-            return <p>Woohooo! You're eligible for {userRew} rewards!</p>
-        } else {
-            return <p></p>
-        }
-    } */
-
     const renderParagraph = () => {
-        if(userRew !== 'N/A' && userRew === "") {
+        if(userRew === "") {
             return <p></p>
+        } else if (userRew === "Invalid"){
+            return <p>Sorry, that account number was invalid. Please try again.</p>
         } else if(userRew !== 'N/A' ) {
             return <p>Woohooo! You're eligible for {userRew}!</p>
         } else if(userRew === 'N/A'){
