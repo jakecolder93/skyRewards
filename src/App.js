@@ -1,4 +1,6 @@
+/* eslint-disable eqeqeq */
 /* eslint-disable prettier/prettier */
+
 import React,{useState, useEffect} from 'react'
 import UserForm from './components/UserForm'
 import RewardResponse from './components/RewardResponse'
@@ -6,29 +8,42 @@ import RewardResponse from './components/RewardResponse'
 
 const App = () => {
 
-  const [account, setAccounts] = useState(false);
+  const [rewards, setRewards] = useState([]);
+  const [userRew, setUserRew] = useState("")
+  
  
   useEffect(() => {
-    getAccount();
-  }, []);
-  function getAccount() {
+    getRewards();
+  }, []); 
+
+  function getRewards() {
     fetch('http://localhost:3001')
       .then(response => {
-        return response.text();
+        return response.json();
       })
       .then(data => {
         console.log(data)
-        setAccounts(data);
+        setRewards(data);
       });
+  }
+
+  
+
+  const getUser = (testIn) => {
+    for(var i = 0 ; i < rewards.length ; i++){
+      if(rewards[i].account == testIn){
+        setUserRew(rewards[i].award)
+      }
+    }
   }
   
 
   return(
     <>
-      <UserForm /> 
-      <RewardResponse />
+      <UserForm getUser = {getUser} /> 
+      <RewardResponse  userRew = {userRew}/>
     </>
   )
 }
 
-export default App; //Current git branch is called get-rewards and postgres port 5000 pswd jake123
+export default App; //Current git branch is called get-rewards and postgres pswd jake123

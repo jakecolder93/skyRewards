@@ -10,9 +10,9 @@ const pool = new Pool({
 })
 
 
-const getRewards = () => {
+const getRewards = (account) => {
     return new Promise(function(resolve,reject) {
-        pool.query('SELECT * FROM rewards ORDER BY id ASC ', (error, results) => {
+        pool.query('SELECT account, award FROM rewards ORDER BY id ASC ', (error, results) => {
             if(error) {
                 reject(error)
             }

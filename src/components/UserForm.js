@@ -1,13 +1,14 @@
 /* eslint-disable prettier/prettier */
 import React, {useRef, useState} from 'react'
 
-const UserForm = () => {
+const UserForm = ({getUser }) => {
     const [accNum, setAccNum] = useState("")
     const searchField = useRef(null)
 
     function handleSubmit(e){
         e.preventDefault()
         searchField.current.focus()
+        getUser(accNum)
         setAccNum("")
     }
 
