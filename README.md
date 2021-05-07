@@ -6,7 +6,7 @@ Backend PostgreSQL server consists of account numbers ranging from 1001-1010 wit
 
 Production: <https://jakerewards.netlify.app> (Backend server isn't connected as I can't find a free host)
 
-I'd never even heard of TDD before last week so a lot of my knowledge and the groundwork for this build is based on a blog found at: <https://outsidein.dev/>
+The groundwork for this build is based on a blog found at: <https://outsidein.dev/>
 
 E2E test scripts can be found in the cypress/integration files.
 
