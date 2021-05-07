@@ -1,6 +1,6 @@
 module.exports = {
-    extends: ['react-app', 'prettier'],
-    plugins: ['prettier', 'jest', 'cypress'],
+    extends: ['react-app', /*'prettier'*/],
+    plugins: [/*'prettier',*/ 'jest', 'cypress'],
     parser: 'babel-eslint',
     env: {
       browser: true,
@@ -14,6 +14,6 @@ module.exports = {
       },
     },
     rules: {
-      'prettier/prettier': 'warn',
+      //'prettier/prettier': 'warn',
     },
   };

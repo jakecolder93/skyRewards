@@ -1,5 +1,5 @@
 /* eslint-disable eqeqeq */
-/* eslint-disable prettier/prettier */
+
 
 import React,{useState, useEffect} from 'react'
 import UserForm from './components/UserForm'
