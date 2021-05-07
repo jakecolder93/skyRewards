@@ -4,7 +4,7 @@ My app for the sky test.
 
 Backend PostgreSQL server consists of account numbers ranging from 1001-1010 with different subscription packages and rewards based on the packages.
 
-Production: <https://jakerewards.netlify.app>
+Production: <https://jakerewards.netlify.app> (Backend server isn't connected as I can't find a free host)
 
 I'd never even heard of TDD before last week so a lot of my knowledge and the groundwork for this build is based on a blog found at: <https://outsidein.dev/>
 
