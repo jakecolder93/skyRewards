@@ -11,7 +11,7 @@ const App = () => {
   const [rewards, setRewards] = useState([]);
   const [userRew, setUserRew] = useState("")
   
- 
+ // Fetch JSON data from the backend on render
   useEffect(() => {
     getRewards();
   }, []); 
@@ -28,7 +28,7 @@ const App = () => {
   }
 
   
-
+// Get user reward from the JSON data
   const getUser = (testIn) => {
     for(var i = 0 ; i < rewards.length ; i++){
       if(rewards[i].account == testIn){

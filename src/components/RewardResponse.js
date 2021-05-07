@@ -4,6 +4,7 @@ import React from 'react'
 
 const RewardResponse = ({userRew}) => {
 
+    // Create response for the user depending on their input
     const renderParagraph = () => {
         if(userRew === "") {
             return <p></p>
