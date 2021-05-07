@@ -4,6 +4,7 @@
 import React,{useState, useEffect} from 'react'
 import UserForm from './components/UserForm'
 import RewardResponse from './components/RewardResponse'
+import './styles/style.css'
 
 
 const App = () => {

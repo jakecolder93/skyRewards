@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React, {useRef, useState} from 'react'
+import '../styles/style.css'
 
 const UserForm = ({getUser }) => {
     const [accNum, setAccNum] = useState("")

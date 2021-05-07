@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    background-color: #DADED4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    color: #3C403D;
+    width:50%; 
+    height: 50%;
+    margin:0 auto;
+    text-align:center;  
+}
+
+#response {  
+    color: #3C403D;
+    width:50%; 
+    height: 50%;
+    margin:0 auto;
+    text-align:center;  
+}
+

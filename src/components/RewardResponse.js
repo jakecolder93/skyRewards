@@ -19,7 +19,7 @@ const RewardResponse = ({userRew}) => {
 
     return(
     <>
-        <div>
+        <div id = 'response'>
             {renderParagraph()}
         </div>
     </>
