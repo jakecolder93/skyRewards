@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-expressions */
-/* eslint-disable prettier/prettier */
+
 
 describe('User form', () => {
     it('Contains input and instruction', () => {

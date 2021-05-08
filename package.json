@@ -22,8 +22,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "server":"node server",
-    "try":"npm-run-all --parallel server start",
+    "server": "node server",
+    "try": "npm-run-all --parallel server start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "dev": "npm-run-all --parallel start cypress",
