@@ -1,8 +1,8 @@
-/* eslint-disable prettier/prettier */
+
 
 const express = require('express')
 const app = express()
-const port = 3001
+const port = process.env.DATABASE_URL|| 3001
 
 const rewards_model = require('./rewards_model')
 

@@ -1,4 +1,4 @@
-/* eslint-disable prettier/prettier */
+
 
 const Pool = require('pg').Pool 
 const pool = new Pool({
